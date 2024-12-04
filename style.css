@@ -311,7 +311,7 @@ footer {
 
 
 /* Mediální dotazy pro responzivitu */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
 /* Hero sekce */
     .hero {
@@ -490,3 +490,108 @@ footer {
         margin-left: 0px;
     }
 }
+
+/* Media Queries pro tablety (600px - 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    /* Navigace */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+        height: 70px; /* Menší výška navigace */
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px; /* Menší mezery mezi položkami */
+    }
+
+    #menu li {
+        margin-left: 0;
+    }
+
+    #menu li a {
+        font-size: 16px; /* Zmenšený font */
+        padding: 5px 10px; /* Kompaktnější rozměry tlačítek */
+    }
+
+    /* Hero sekce */
+    .hero {
+        height: 60vh; /* Snížená výška hero sekce */
+        background-size: cover;
+    }
+
+    .hero .hero-content {
+        font-size: 1.8em; /* Menší text */
+        padding: 10px;
+    }
+
+    /* Sekce "O nás" */
+    .aboutus {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px; /* Menší mezery mezi prvky */
+        padding: 20px;
+    }
+
+    .aboutus .image {
+        width: 70%; /* Menší obrázek */
+        margin: 0 auto;
+    }
+
+    .aboutus h2 {
+        font-size: 1.5em;
+    }
+
+    .aboutus p {
+        font-size: 0.9em; /* Menší text pro úsporu místa */
+    }
+
+    /* Sekce "Služby" */
+    .services {
+        padding: 15px;
+    }
+
+    .services h2 {
+        font-size: 1.5em; /* Zmenšený nadpis */
+    }
+
+    .service-container {
+        flex-wrap: wrap;
+        justify-content: space-between; /* Lepší zarovnání */
+        gap: 15px;
+    }
+
+    .service-item {
+        flex: 1 1 48%; /* Dvě položky vedle sebe */
+        margin: 10px;
+        text-align: center;
+        padding: 10px; /* Menší vnitřní mezery */
+        font-size: 0.9em; /* Zmenšený text */
+    }
+
+    /* Sekce "Kontakt" */
+    .contact {
+        padding: 15px;
+    }
+
+    .contact ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact ul li {
+        margin-bottom: 8px;
+        font-size: 0.9em;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8em; /* Menší text */
+        padding: 10px;
+        text-align: center;
+    }
+}
+
