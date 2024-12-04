@@ -491,4 +491,71 @@ footer {
     }
 }
 
+/* Media Queries pro tablety */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Navigace */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #menu ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #menu li {
+        margin-left: 0;
+    }
+
+    /* Hero sekce */
+    .hero .hero-content {
+        font-size: 2em; /* Menší font pro lepší čitelnost */
+        padding: 15px;
+    }
+
+    /* Sekce "O nás" */
+    .aboutus {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutus .image {
+        width: 100%; /* Obrázek zabere celou šířku */
+        margin-top: 20px;
+    }
+
+    /* Sekce "Služby" */
+    .services h2 {
+        font-size: 1.8em;
+    }
+
+    .service-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .service-item {
+        flex: 1 1 80%; /* Šířka každé položky služby bude 80% */
+        margin-bottom: 20px;
+    }
+
+    /* Sekce "Kontakt" */
+    .contact {
+        padding: 20px;
+    }
+
+    .contact ul {
+        text-align: left; /* Text zůstává zarovnán doleva */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8em; /* Menší text ve footeru */
+    }
+}
+
+
 
