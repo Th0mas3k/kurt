@@ -311,7 +311,7 @@ footer {
 
 
 /* Mediální dotazy pro responzivitu */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
 /* Hero sekce */
     .hero {
@@ -490,104 +490,3 @@ footer {
         margin-left: 0px;
     }
 }
-
-/* Media Queries pro tablety (600px - 1024px) */
-@media (min-width: 600px) and (max-width: 1024px) {
-    /* Navigace */
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 30px;
-    }
-
-    #menu ul {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    #menu li {
-        margin-left: 0;
-    }
-
-    #menu li a {
-        font-size: 18px; /* Větší font pro lepší čitelnost */
-        padding: 8px 15px;
-    }
-
-    /* Hero sekce */
-    .hero {
-        background-size: cover; /* Lepší přizpůsobení obrázku */
-        height: 80vh; /* Snížení výšky na tabletech */
-    }
-
-    .hero .hero-content {
-        font-size: 2em;
-        max-width: 90%; /* Omezit šířku textu na tabletech */
-        padding: 20px;
-    }
-
-    /* Sekce "O nás" */
-    .aboutus {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px; /* Větší mezery mezi prvky */
-        padding: 30px;
-    }
-
-    .aboutus .image {
-        width: 80%; /* Obrázek zabere 80 % šířky sekce */
-        margin: 0 auto;
-    }
-
-    .aboutus h2 {
-        font-size: 1.8em;
-    }
-
-    /* Sekce "Služby" */
-    .services {
-        padding: 20px;
-    }
-
-    .services h2 {
-        font-size: 1.8em;
-    }
-
-    .service-container {
-        flex-wrap: wrap;
-        justify-content: space-around; /* Položky služeb rovnoměrně rozmístěny */
-        gap: 20px;
-    }
-
-    .service-item {
-        flex: 1 1 45%; /* Dvě položky vedle sebe */
-        margin: 10px;
-        text-align: center;
-        padding: 20px;
-    }
-
-    /* Sekce "Kontakt" */
-    .contact {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .contact ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .contact ul li {
-        margin-bottom: 10px;
-        font-size: 1em;
-    }
-
-    /* Footer */
-    footer {
-        font-size: 0.9em;
-        padding: 15px;
-        text-align: center;
-    }
-}
-
-
