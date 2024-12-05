@@ -315,7 +315,7 @@ footer {
 
 /* Hero sekce */
     .hero {
-        height: 50vh;
+        height: 75vh;
     }
 
     .hero .hero-content {
@@ -328,7 +328,7 @@ footer {
     .aboutus {
         flex-direction: column;
         padding: 10px;
-        margin: 100px 10px;
+        margin: 100px 25px;
     }
 
     .aboutus .vedle {
@@ -341,7 +341,7 @@ footer {
     }
 
     .aboutus h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         padding: 10px;
     }
 
@@ -353,7 +353,7 @@ footer {
     .service-container {
         flex-direction: flex;
         gap: 20px;
-        margin: 0px 10px;
+        margin: 0px 25px;
     }
 
     .service-item {
@@ -362,23 +362,23 @@ footer {
     }
 
     .h2 {
-        font-size: 1.3em;
+        font-size: 1em;
         padding-bottom: 30px;
     }
 
 /* Galerie */
     .gallery {
-        margin: 100px 10px;
+        margin: 100px 25px;
     }
 
     .gallery h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         padding: 10px;
     }
 
     .gallery-container {
         flex-direction: column; /* Obrázky pod sebou */
-        gap: 15px; /* Menší mezery */
+        gap: 25px; /* Menší mezery */
     }
 
     .gallery-item {
@@ -398,12 +398,12 @@ footer {
 
 /* Sekce "Kontakt" */
     .contact h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         padding: 10px;
     }
 
     .contact {
-        margin: 100px 10px;
+        margin: 100px 25px;
         padding: 15px;
         font-size: 1em;
     }
@@ -420,11 +420,11 @@ footer {
     }
 
     .formular {
-        margin: 100px 10px;
+        margin: 100px 25px;
     }
 
     .formular h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         padding: 10px;
     }
 
@@ -491,107 +491,146 @@ footer {
     }
 }
 
-/* Media Queries pro tablety (600px - 1024px) */
-@media (min-width: 600px) and (max-width: 1024px) {
-    /* Navigace */
+/* Media Queries pro tablety */
+@media (min-width: 769px) and (max-width: 1024px) {
+
     nav {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 10px 20px;
-        height: 70px; /* Menší výška navigace */
+        height: 70px;
+        padding: 0 40px;
     }
-
+    
+    #logo {
+        width: 50px;
+        height: 50px;
+        margin-left: 25px;
+    }
+    
     #menu ul {
-        display: flex;
-        flex-direction: row;
-        gap: 10px; /* Menší mezery mezi položkami */
-    }
-
-    #menu li {
-        margin-left: 0;
+        margin-right: 10px;
+        gap: 10px;
     }
 
     #menu li a {
-        font-size: 16px; /* Zmenšený font */
-        padding: 5px 10px; /* Kompaktnější rozměry tlačítek */
+        padding: 5px 10px;
+        font-size: 1.em;
     }
 
     /* Hero sekce */
     .hero {
-        height: 60vh; /* Snížená výška hero sekce */
-        background-size: cover;
+        height: 100vh;
     }
 
     .hero .hero-content {
-        font-size: 1.8em; /* Menší text */
+        font-size: 1.5em;
         padding: 10px;
+        margin-top: 60px;
     }
 
-    /* Sekce "O nás" */
+/* Sekce "O nás" */
     .aboutus {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 15px; /* Menší mezery mezi prvky */
-        padding: 20px;
+        padding: 10px;
+        margin: 100px 25px;
+    }
+
+    .aboutus .vedle {
+        margin-bottom: 20px;
     }
 
     .aboutus .image {
-        width: 70%; /* Menší obrázek */
-        margin: 0 auto;
+        width: 40%;
+        margin: 0;
     }
 
     .aboutus h2 {
         font-size: 1.5em;
+        padding: 10px;
     }
 
-    .aboutus p {
-        font-size: 0.9em; /* Menší text pro úsporu místa */
-    }
-
-    /* Sekce "Služby" */
+/* Sekce "Služby" */
     .services {
-        padding: 15px;
-    }
-
-    .services h2 {
-        font-size: 1.5em; /* Zmenšený nadpis */
+        margin: 10px 25px;
     }
 
     .service-container {
-        flex-wrap: wrap;
-        justify-content: space-between; /* Lepší zarovnání */
-        gap: 15px;
+        flex-direction: flex;
+        gap: 20px;
+        margin: 0px 25px;
     }
 
     .service-item {
-        flex: 1 1 48%; /* Dvě položky vedle sebe */
-        margin: 10px;
         text-align: center;
-        padding: 10px; /* Menší vnitřní mezery */
-        font-size: 0.9em; /* Zmenšený text */
-    }
-
-    /* Sekce "Kontakt" */
-    .contact {
         padding: 15px;
     }
 
-    .contact ul {
-        list-style: none;
-        padding: 0;
+    .h2 {
+        font-size: 1.3em;
+        padding-bottom: 30px;
     }
 
-    .contact ul li {
-        margin-bottom: 8px;
-        font-size: 0.9em;
+/* Galerie */
+    .gallery {
+        margin: 100px 25px;
     }
 
-    /* Footer */
+    .gallery h2 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .gallery-container {
+        gap: 15px; /* Menší mezery */
+    }
+
+    .gallery-item {
+        width: 100%; /* Roztažení na šířku kontejneru */
+    }
+
+    .gallery-item img {
+        width: 100%; /* Obrázek se přizpůsobí šířce kontejneru */
+        height: auto; /* Zachování proporcí obrázku */
+    }
+
+    .gallery-item p {
+        font-size: 1em; /* Zvětšení textu */
+        margin-top: 5px; /* Menší mezera mezi obrázkem a textem */
+    }
+
+/* Sekce "Kontakt" */
+    .contact h2 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .contact {
+        margin: 100px 150px;
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .contact button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .formular {
+        margin: 100px 50px;
+    }
+
+    .formular h2 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+/* Footer */
     footer {
-        font-size: 0.8em; /* Menší text */
+        font-size: 0.8em;
         padding: 10px;
         text-align: center;
     }
 }
-
