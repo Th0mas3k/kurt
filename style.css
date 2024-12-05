@@ -352,7 +352,7 @@ footer {
 
     .service-container {
         gap: 20px;
-        margin: 0px 10px;
+        margin: 0px 25px;
     }
 
     .service-item {
@@ -511,7 +511,7 @@ footer {
 
     #menu li a {
         padding: 5px 10px;
-        font-size: 1.em;
+        font-size: 1em;
     }
 
     /* Hero sekce */
@@ -551,7 +551,6 @@ footer {
     }
 
     .service-container {
-        flex-direction: flex;
         gap: 20px;
         margin: 0px 25px;
     }
