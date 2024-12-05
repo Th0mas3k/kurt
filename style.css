@@ -351,7 +351,6 @@ footer {
     }
 
     .service-container {
-        flex-direction: flex;
         gap: 20px;
         margin: 0px 25px;
     }
